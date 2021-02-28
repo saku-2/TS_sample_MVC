@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Typescript_MVCサンプル";
+}
+
+<h1>Typescript appの作り方（ASP.NET MVC)</h1>
+<p>参考　→　https://mithunvp.com/using-typescript-with-asp-net-mvc5/</p>
+<p>これも　→　https://docs.microsoft.com/ja-jp/visualstudio/javascript/tutorial-aspnet-with-typescript?view=vs-2019</p>
+
+<p>[NuGet パッケージの管理] で [Microsoft.TypeScript.MSBuild] を追加する。</p>
+<p>フォルダを追加して、[TypeScript JSON 構成ファイル] を追加する。</p>
+<p>★　"outDir": "../appScriptsJS"　にコンパイルされる。</p>
+<p>tsconfig.jsonに、"compileOnSave": true,　を追加する。</p>
+<p>app.tsを追加する。</p>
+<p>ビルドする。</p>
+<p>appScriptsJSフォルダに、コンパイルされている！！(.mapファイルもできている）</p>
+<p>appScriptsJSフォルダ右クリック-追加-既存の項目-OK　と追加する。</p>
+<p>完成！！</p>
+
+
+<div id="divMsg"></div>
+<br />
+<button type="button" class="btn btn-primary btn-md" onclick="ClickMeButton()">
+    Messageでるよ～♪
+</button>
